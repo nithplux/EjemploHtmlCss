@@ -10,37 +10,29 @@ function resp(){
 }
 
 
-    const section1 = document.querySelector('#section1');
-    const section2 = document.querySelector('#section2');
-    const section3 = document.querySelector('#section3');
 
-    function handleScroll() {
-        // Código para manejar el evento de desplazamiento
-        const scrollPosition = window.scrollY;
+   
+function secciones(sectionId){
 
-  if (scrollPosition >= section1.offsetTop && scrollPosition < section2.offsetTop) {
-    console.log('Estás en la sección 1');
-  } else if (scrollPosition >= section2.offsetTop && scrollPosition < section3.offsetTop) {
-    console.log('Estás en la sección 2');
-  } else if (scrollPosition >= section3.offsetTop) {
-    console.log('Estás en la sección 3');
+  const section = document.getElementById(sectionId);
+  
+  if (sectionId === 'home') {
+    // Acciones específicas para la sección "home"
+    console.log("Estás en la sección home");
+  } else if (sectionId === 'section2') {
+    // Acciones específicas para la sección "section2"
+    console.log("Estás en la sección 2");
+  } else if (sectionId === 'section3') {
+    // Acciones específicas para la sección "section3"
+    console.log("Estás en la sección 3");
   }
-      }
-      
-      window.addEventListener('scroll', handleScroll);
-
-function secciones(){
-
-      
-        const section2 = document.getElementById('section2');
-
-       
-            section2.scrollIntoView({ behavior: 'smooth' });
+  
+  section.scrollIntoView({ behavior: 'smooth' });
           }
 
 
 
-}      
+    
 
 
       

@@ -3,39 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SGDAC-LN</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/shortcut icon.jpg">
 </head>
 <body class="background">
-  
-<button id="seccion1" onclick="secciones()">section2</button>
 
-    <section id="section1" class="section">
+<main class="main">
+  <aside class="aside">
+   <p> <button  onclick="secciones('home')">INICIO</button> </p>
+  <p><button onclick="secciones('section2')">SECCION2</button> </p>
+   <p> <button onclick="secciones('section3')">SECCION3</button> </p>
+  </aside>
+
+
+    <section id="home" class="section">
+        <div class="content">
         <input type="number" id="var1">
         <input type="number" id="var2">
         <p id="resultado" >resultados</p>
         <button id="sol"  onclick="resp()"  class="button">probar</button>
-
+        </div>
     </section>
     <section id="section2" class="section">
+        <div class="content">
         <input type="number" id="var1">
         <input type="number" id="var2">
         <p id="resultado" >resultados</p>
         <button id="sol"  onclick="resp()"  class="button">probar</button>
-
+        </div>
 
     </section>
     <section id="section3" class="section">
+        <div class="content">
         <input type="number" id="var1">
         <input type="number" id="var2">
         <p id="resultado" >resultados</p>
         <button id="sol"  onclick="resp()"  class="button">probar</button>
-
+        </div>
 
 
     </section>
 
-
+</main>
 
 
     <script src="script.js"></script>

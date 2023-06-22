@@ -1,5 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .background{
-    background-color: aquamarine;
+    background-color:white;
 
 }
 .button{
@@ -8,7 +13,32 @@
 }
 .section{
   
- 
-  height: 100vh;
-  width: 100vw;
+position: relative;
+left: 30vh;
+width: 100vh;
+height: 100vh;
+background: yellowgreen;
+display: flex;
+  
+}
+.aside{
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 30vh;
+ height: 100vh;
+ display: flex;
+ background: yellow;
+ flex-direction: column;
+ padding: 40vh 10vh 0 10vh;
+ z-index: 100;
+
+
+}
+.main{
+  background: white;
+  width: 100%;
+}
+.content{
+  padding: 40vh 10vh 0 10vh;
 }
