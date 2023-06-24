@@ -18,13 +18,15 @@ function secciones(sectionId){
   
   if (sectionId === 'home') {
     // Acciones específicas para la sección "home"
-    console.log("Estás en la sección home");
+    
   } else if (sectionId === 'section2') {
+    
     // Acciones específicas para la sección "section2"
-    console.log("Estás en la sección 2");
+
   } else if (sectionId === 'section3') {
     // Acciones específicas para la sección "section3"
-    console.log("Estás en la sección 3");
+
+ 
   }
   
   section.scrollIntoView({ behavior: 'smooth' });
