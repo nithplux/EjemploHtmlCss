@@ -72,40 +72,80 @@
 /*inicio banner*/
 
 .banner{
-  background-image: url(../img/vscode.jpg);
-  background-position: center;
+
   width: 70%;
   height: calc(100vh - 110px);
-  display: flex;
-  flex-direction: column;
+  position: relative;
+ background-color: red;
+ display: flex;
+ flex-direction: column;
   justify-content: center;
   align-items: center;
   color:aliceblue;
+  z-index: 2;
 
 
 }
 
+.banner video{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+
+}
+
+.banner .capa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: 1;
+  
+}
+
+
 .banner h1{
-  font-size: 75px;
+  font-size: 40px;
+  margin: 2vh 0 1vh;
+  text-align: center;
+
+
+  z-index: 2;
+  
 }
 
 .banner h2{
   font-size: 30px;
+  margin: 2vh 0 1vh;
+  text-align: center;
+  position: relative;
+ 
+  
 }
 
 .banner a{
   background-color: aqua;
   width: 250px;
   height: 60px;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  border-radius: 0px;
+  position: relative;
   text-decoration: none;
   font-size: 24px;
-  margin-top: 75px;
+  margin-top: 2vh;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+
 }
 
 .banner a:hover{
@@ -118,9 +158,139 @@
 
 /*fin banner*/
 
-/*inicio navegacion*/
 
-/*fin navegacion*/
+/*inicioSection1*/
+
+.section-2{
+ background-color: #CCE7C4;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.bloque-izquierdo{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0 3%;
+}
+.izq-titulo{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.izq-titulo h2{
+
+ font-size: 28px;
+}
+
+.izq-titulo h3{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.izq-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px ;
+
+}
+
+.izq-img img{
+
+  /*cubre el 100% y se acomoda dentro de su padre en este caso es izq-img*/
+
+    object-fit: cover;
+  
+    width: 60%;
+    
+  
+}
+
+
+.izq-parrafo{
+  font-size: 18px;
+}
+
+
+
+.bloque-derecho{
+    width: 40%;
+
+    height: 100%;
+    padding: 0 3%;
+}
+.der-titulo{
+
+  text-align: center;
+}
+
+.der-titulo h3{
+  font-size: 20px;
+}
+
+.der-noticias{
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  margin: 30px 0;
+}
+
+.noticias-img{
+  /*recuerda es el 100% pero de todo lo que ocupa su padre en este caso es bloque-derecho*/
+  width: 50%;
+}
+
+.noticias-img img{
+    /*cubre el 100% y se acomoda dentro de su padre en este caso es izq-img*/
+    object-fit: cover;
+    width: 100%;
+}
+
+.noticias-textos{
+  width: 50%;
+  margin: 0 10px;
+
+}
+.noticias-textos h4{
+  
+  font-size: 17px;
+  text-align: center;
+  margin: 15px;
+
+}
+.noticias-textos p{
+  
+  font-size: 15px;
+  text-align: center;
+  margin: 15px;
+
+}
+.noticias-textos a{
+  
+  font-size: 14px;
+  margin-top: 10px;
+
+}
+
+
+
+
+
+/*finSection1*/
 
 
 
